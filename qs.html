@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css"
+    <title>Know the USER</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+    <form id="accountForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        
+        <label for="interests">Interests:</label>
+        <select id="interests" name="interests" required>
+            <option value="">Select your interests</option>
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="music">Music</option>
+            <option value="travel">Travel</option>
+            <option value="reading">Reading</option>
+            <option value="cooking">Cooking</option>
+        </select>
+        
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        
+        <button id="nextButton">Go to Next Page</button>
+
+<script>
+    document.getElementById('nextButton').onclick = function() {
+        window.location.href = 'next.html'; // Change to your next page URL
+    };
+</script>
+    </form>
+
+    <p id="message" class="error"></p>
+</div>
+
+<script>
